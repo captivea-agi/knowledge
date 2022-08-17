@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="action_auto_test" model="base.automation">
+    <field name="action_server_id" ref="action_test"/>
+    <field name="active" eval="True"/>
+    <field name="filter_domain" eval="False"/>
+    <field name="filter_pre_domain" eval="False"/>
+    <field name="last_run" eval="False"/>
+    <field name="on_change_field_ids" eval="[(6, 0, [])]"/>
+    <field name="trg_date_id" eval="False"/>
+    <field name="trg_date_range" eval="False"/>
+    <field name="trg_date_range_type" eval="False"/>
+    <field name="trigger">on_write</field>
+  </record>
+</odoo>

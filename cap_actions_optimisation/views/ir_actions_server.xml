@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<odoo>
+  <record id="action_test" model="ir.actions.server">
+    <field name="binding_model_id" eval="False"/>
+    <field name="binding_type">action</field>
+    <field name="binding_view_types">list,form</field>
+    <field name="child_ids" eval="[(6, 0, [])]"/>
+    <field name="code"><![CDATA[log("8", level='info')
+
+#test si la case est cohée
+#si oui afficher sur le champ texte x_studio_type_de_contact: Entreprise
+#sinon afficher sur le champ texte x_studio_type_de_contact: Particulier
+test=test
+
+]]>    </field>
+    <field name="crud_model_id" eval="False"/>
+    <field name="help" eval="False"/>
+    <field name="link_field_id" eval="False"/>
+    <field name="model_id" ref="base.model_res_partner"/>
+    <field name="name">action de test</field>
+    <!-- <field name="sequence">5</field> -->
+    <field name="state">code</field>
+  </record>
+</odoo>
